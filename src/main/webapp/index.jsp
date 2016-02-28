@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<title>first Spring example...</title>
 </head>
 <body>
 	<h1>This is index.jsp. 한글.. </h1>
