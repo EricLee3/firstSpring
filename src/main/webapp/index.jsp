@@ -7,6 +7,6 @@
 <title>first Spring example...</title>
 </head>
 <body>
-	<h1>This is index.jsp. ÇÑ±Û.. </h1>
+	<P>  The time on the server is ${serverTime}. </P>
 </body>
 </html>
