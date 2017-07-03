@@ -2,6 +2,7 @@ package com.eric.first;
 
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Locale;
 
 import org.slf4j.Logger;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * Handles requests for the application home page.
@@ -38,4 +40,11 @@ public class HomeController {
 		return "home";
 	}
 	
+	
+	@RequestMapping(value="/signUp", method=RequestMethod.POST)
+	public HashMap<String, Object> signUp(@RequestParam HashMap<String, Object> param)  {
+		HashMap<String, Object> hashmap = new HashMap<String, Object>();
+		hashmap.put("KEY", "YES");
+		return hashmap;
+	}
 }
